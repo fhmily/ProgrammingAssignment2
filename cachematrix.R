@@ -3,6 +3,8 @@
 
 ## Write a short comment describing this function
 
+# function makeCacheMatrix will create a closure with
+# methods for storing and retriving cached inversed Matrix
 makeCacheMatrix <- function(x = matrix()) {
     # closure variable for caching inversed Matrix
     inversedM <- NULL
@@ -37,6 +39,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Write a short comment describing this function
 
+# function cacheSolve accept makeCacheMatrix returned value
+# to retrieve or calculate inversed Matrix from it
 cacheSolve <- function(x, ...) {
     ## Return a matrix that is the inverse of 'x'
     iM <- x$getInversedM()
